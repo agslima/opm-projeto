@@ -1,3 +1,86 @@
+# OPM Reservoir Simulator: Cloud Performance & GPU Acceleration
+
+![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)
+![CUDA](https://img.shields.io/badge/Acceleration-Nvidia%20CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![C++](https://img.shields.io/badge/Language-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Research%20Complete-success?style=flat-square)
+![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)
+
+---
+
+## 🔬 Research Overview
+
+This project focuses on the **Open Porous Media (OPM)** simulator, an open-source suite for modeling fluid flow in porous media (such as aquifers, oil reservoirs, and CO₂ storage).
+
+The primary goal was to analyze the **computational performance** of the simulator when deployed on **Microsoft Azure**, specifically investigating:
+* Complex dependency compilation (BLAS, LAPACK).
+* GPU Acceleration using **Nvidia CUDA**.
+* Cost-benefit analysis of vertical vs. horizontal scaling in the Cloud.
+
+> **Academic Context:** This study resulted in a scientific paper presented for the *MC038 - Introduction to Scientific Writing* course at the **Institute of Computing, Unicamp**.
+
+---
+
+## 🏛️ Architecture & Complexity
+
+<p align="center">
+  <img src="https://github.com/lima-agnaldo/OPM/blob/master/.files/Grid.jpg?raw=true" alt="OPM Simulation Grid" width="600"/>
+  <br>
+  <em>Figure 1: Visualization of a reservoir simulation grid.</em>
+</p>
+
+Compiling scientific software involves managing a complex graph of dependencies. The diagram below illustrates the mathematical libraries required to build the OPM simulator, including solvers for linear algebra equations (BLAS/LAPACK) essential for fluid dynamics.
+
+<p align="center">
+  <img src="https://github.com/lima-agnaldo/OPM/blob/master/.files/grafo_libs.jpg?raw=true" alt="Dependency Graph" width="700"/>
+  <br>
+  <em>Figure 2: Library Dependency Graph for the OPM compilation process.</em>
+</p>
+
+---
+
+## 📊 Key Findings
+
+The research aimed to establish performance metrics comparing simple single-core machines against multi-core instances and clustered environments.
+
+**Critical insights included:**
+
+* **Vertical vs. Horizontal Scaling:** Contrary to standard expectations, adding more nodes (clustering) actually **increased simulation time** in certain configurations due to network latency overhead.
+* **Optimal Configuration:** The most efficient setup (balancing cost, time, and energy) was a **single High-Performance VM** utilizing multiple processing cores, rather than a cluster of smaller machines.
+* **Energy Efficiency:** Optimizing the compilation for specific hardware architectures resulted in measurable reductions in energy consumption per simulation job.
+
+---
+
+## 📄 Read the Paper
+
+The full methodology, benchmarks, and detailed energy analysis are available in the attached PDF.
+
+> 🎓 **[Read the Full Article (PDF)](https://github.com/agslima/OPM/blob/master/Article-A_Benefit_Study_of_Implementing_a_Reservoir_Simulator_in_Cloud_Computing.pdf)**
+
+---
+
+## 🛠️ Technologies & Tools
+
+* **Simulation Software:** OPM (Open Porous Media)
+* **Cloud Provider:** Microsoft Azure (VMs & Clusters)
+* **HPC & Compilation:** Nvidia CUDA, CMake, GCC, OpenMPI
+* **Math Libraries:** BLAS, LAPACK, Dune
+* **OS/Scripting:** Linux (Ubuntu/CentOS), Bash Automation
+
+---
+
+## 👤 Author
+
+**Agnaldo Silva Lima**
+Computer Science Student @ Unicamp  
+[LinkedIn Profile](https://www.linkedin.com/in/agslima)
+
+---
+
+## ⚖️ License
+
+This project is distributed under the **GNU GPLv3** license. See the [LICENSE](./LICENSE) file for more details.
+
 <!-- 
 # Projeto de pesquisa
 Pesquisa com o objetivo de estudar o Simulador de Reservatório OPM, suas bibliotecas científicas, compilação voltada para aceleração usando GPUs (CUDA) e aplicações na Cloud Azure.
@@ -15,7 +98,7 @@ O diagrama acima mostra as ligações das bibliotecas no software. Cada uma dela
 
 ### Artigos
 O principal objetivo do meu artigo é estabelecer uma métrica de desempenho de simulações na Nuvem Azure usando desde máquinas de processadores simples a máquinas com vários núcleos ou Cluster de máquinas. Usando essas métricas, pude chegar ao consumo de energia e estabelecer a relação custo benefício, de tempo e o consumo energético. Obtive resultados bastante interessantes, como o caso onde o tempo de simulação tende a aumentar quando mais máquinas disponíveis ou quando o tempo é drasticamente reduzido quando é utilizado apenas uma máquina, mas com diversos núcleos de processamento. 
--->
+
 
 # OPM – Simulação Científica em Cloud com Aceleração via GPU
 
@@ -103,3 +186,4 @@ Estudante de Ciência da Computação – Unicamp
 
 Este projeto segue a licença **GNU GPLv3**.  
 Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
+-->
