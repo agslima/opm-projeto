@@ -8,7 +8,7 @@
 
 ---
 
-## 🔬 Research Overview
+## Research Overview
 
 This project focuses on the **Open Porous Media (OPM)** simulator, an open-source suite for modeling fluid flow in porous media (such as aquifers, oil reservoirs, and CO₂ storage).
 
@@ -21,10 +21,10 @@ The primary goal was to analyze the **computational performance** of the simulat
 
 ---
 
-## 🏛️ Architecture & Complexity
+## Architecture & Complexity
 
 <p align="center">
-  <img src="https://github.com/lima-agnaldo/OPM/blob/master/.files/Grid.jpg?raw=true" alt="OPM Simulation Grid" width="600"/>
+  <img src="https://github.com/lima-agnaldo/OPM/blob/master/.files/Grid.jpg?raw=true" alt="OPM Simulation Grid" width="400"/>
   <br>
   <em>Figure 1: Visualization of a reservoir simulation grid.</em>
 </p>
@@ -32,14 +32,14 @@ The primary goal was to analyze the **computational performance** of the simulat
 Compiling scientific software involves managing a complex graph of dependencies. The diagram below illustrates the mathematical libraries required to build the OPM simulator, including solvers for linear algebra equations (BLAS/LAPACK) essential for fluid dynamics.
 
 <p align="center">
-  <img src="https://github.com/lima-agnaldo/OPM/blob/master/.files/grafo_libs.jpg?raw=true" alt="Dependency Graph" width="700"/>
+  <img src="https://github.com/lima-agnaldo/OPM/blob/master/.files/grafo_libs.jpg?raw=true" alt="Dependency Graph" width="500"/>
   <br>
   <em>Figure 2: Library Dependency Graph for the OPM compilation process.</em>
 </p>
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 The research aimed to establish performance metrics comparing simple single-core machines against multi-core instances and clustered environments.
 
@@ -51,7 +51,7 @@ The research aimed to establish performance metrics comparing simple single-core
 
 ---
 
-## 📄 Read the Paper
+## Read the Paper
 
 The full methodology, benchmarks, and detailed energy analysis are available in the attached PDF.
 
@@ -59,7 +59,7 @@ The full methodology, benchmarks, and detailed energy analysis are available in 
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 * **Simulation Software:** OPM (Open Porous Media)
 * **Cloud Provider:** Microsoft Azure (VMs & Clusters)
@@ -69,7 +69,7 @@ The full methodology, benchmarks, and detailed energy analysis are available in 
 
 ---
 
-## 👤 Author
+## Author
 
 **Agnaldo Silva Lima**
 Computer Science Student @ Unicamp  
@@ -77,7 +77,7 @@ Computer Science Student @ Unicamp
 
 ---
 
-## ⚖️ License
+## License
 
 This project is distributed under the **GNU GPLv3** license. See the [LICENSE](./LICENSE) file for more details.
 
