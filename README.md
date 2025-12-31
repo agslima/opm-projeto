@@ -2,8 +2,6 @@
 
 ![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)
 ![CUDA](https://img.shields.io/badge/Acceleration-Nvidia%20CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![C++](https://img.shields.io/badge/Language-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Research%20Complete-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)
 
 ---
